@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plots</title>
+
+    <!-- Keep the original GitHub Pages CSS -->
+    <link rel="stylesheet" href="/QUILS2_0/assets/css/style.css">
+
+    <!-- Our custom styles for the plots layout -->
+    <style>
+      .plots-title {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      .plots-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      .plot-figure {
+        text-align: center;
+      }
+
+      .plot-figure img {
+        width: 100%;
+        max-width: 450px;  /* adjust this to make plots bigger/smaller */
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .plot-caption {
+        margin-top: 6px;
+        font-weight: bold;
+      }
+
+      /* Placement in the grid */
+      .fig1 { grid-column: 1; justify-self: center; }
+      .fig2 { grid-column: 3; justify-self: center; }
+      .fig3 { grid-column: 2; justify-self: center; }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+
+      <h1 class="plots-title">Plots</h1>
+
+      <div class="plots-grid">
+
+        <figure class="plot-figure fig1">
+          <img src="fig1.png" alt="Figure 1">
+          <div class="plot-caption">Fig1</div>
+        </figure>
+
+        <figure class="plot-figure fig2">
+          <img src="fig2.png" alt="Figure 2">
+          <div class="plot-caption">Fig2</div>
+        </figure>
+
+        <figure class="plot-figure fig3">
+          <img src="fig3.png" alt="Figure 3">
+          <div class="plot-caption">Fig3</div>
+        </figure>
+
+      </div>
+    </div>
+  </body>
+</html>
+
